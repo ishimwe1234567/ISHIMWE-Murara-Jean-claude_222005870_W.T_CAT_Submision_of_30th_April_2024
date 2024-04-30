@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Linking to external stylesheet -->
+  <link rel="stylesheet" type="text/css" href="style.css" title="style 1" media="screen, tv, projection, handheld, print"/>
+  <!-- Defining character encoding -->
+  <meta charset="utf-8">
+  <!-- Setting viewport for responsive design -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home Page</title>
+
+  <style>
+  .dropdown {
+    position: relative;
+    display: inline;
+    margin-right: 10px;
+  }
+  .dropdown-contents {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    left: 0; /* Aligning dropdown contents to the left */
+  }
+  .dropdown:hover .dropdown-contents {
+    display: block;
+  }
+  .dropdown-contents a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .dropdown-contents a:hover {
+    background-color: #f1f1f1;
+  }
+  header{
+    background-color:orange;
+    padding: 50px;
+}
+  section{
+    padding:175px;
+    border-bottom: 1px solid #ddd;
+}
+footer{
+    text-align: center;
+    padding: 35px;
+    background-color:orange;
+}
+</style>
+</head>
+<header>
+<body bgcolor="skyblue">
+
+  <ul style="list-style-type: none; padding: 0;">
+    <!-- Navigation items -->
+    <!-- Adjusted the margin-right for each li to align the items properly -->
+    <li style="display: inline; margin-right: 10px;"><a href="./home.html" style="padding: 10px; color: white; background-color: skyblue; text-decoration: none; margin-right: 15px;">HOME</a></li>
+    <li style="display: inline; margin-right: 10px;"><a href="./about.html" style="padding: 10px; color: white; background-color: skyblue; text-decoration: none; margin-right: 15px;">ABOUT</a></li>
+    <li style="display: inline; margin-right: 10px;"><a href="./contact.html" style="padding: 10px; color: white; background-color: skyblue; text-decoration: none; margin-right: 15px;">CONTACT</a></li>
+    <li style="display: inline; margin-right: 10px;"><a href="./application.php" style="padding: 10px; color: white; background-color: skyblue; text-decoration: none; margin-right: 15px;">APPLICATION</a></li>
+    <li style="display: inline; margin-right: 10px;"><a href="./employer.php" style="padding: 10px; color: white; background-color: skyblue; text-decoration: none; margin-right: 15px;">EMPLOYER</a></li>
+    <li style="display: inline; margin-right: 10px;"><a href="./experience.php" style="padding: 10px; color: white; background-color: skyblue; text-decoration: none; margin-right: 15px;">EXPERIENCE</a></li>
+    <li style="display: inline; margin-right: 10px;"><a href="./job.php" style="padding: 10px; color: white; background-color: skyblue; text-decoration: none; margin-right: 15px;">JOB</a></li>
+    <li style="display: inline; margin-right: 10px;"><a href="./jobpreference.php" style="padding: 10px; color: white; background-color: skyblue; text-decoration: none; margin-right: 15px;">JOB PREFERENCE</a></li>
+    <li style="display: inline; margin-right: 10px;"><a href="./worker.php" style="padding: 10px; color: white; background-color: skyblue; text-decoration: none; margin-right: 15px;">WORKER</a></li>
+    <!-- Adjusted the margin-right for the dropdown li to align the dropdown properly -->
+    <li class="dropdown" style="display: inline; margin-right: 10px;">
+      <a href="#" style="padding: 10px; color: white; background-color: darkgreen; text-decoration: none; margin-right: 15px;">Settings</a>
+      <div class="dropdown-contents">
+        <!-- Links inside the dropdown menu -->
+        <a href="login.html">Login</a>
+        <a href="register.html">Register</a>
+        <a href="logout.php">Logout</a>
+      </div>
+    </li>
+  </ul>
+  <!-- <div class="col-3 offset">-->
+  <form class="d-flex" role="search" action="search.php">
+    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="query">
+    <button class="btn btn-outline-success" type="submit">Search</button>
+  </form>
+</header>
+<section>
+	<h2><bold><u> OUR CONTACT US</u></bold></h2>
+<ul></ul>
+  <li>Address: 67 kigali, huye, State</li>
+  <li>Phone: +250 781939656</li>
+  <li>Email: murara@gmail.com</li>
+</ul>
+
+<form action="submit_contact" method="POST">
+  <label for="name">Names:</label><br>
+  <input type="text" id="name" name="name" required><br>
+
+  <label for="email">Email:</label><br>
+  <input type="email" id="email" name="email" required><br>
+
+  <label for="phone">Telephone:</label><br>
+  <input type="tel" id="phone" name="phone"><br>
+
+  <label for="message">Message:</label><br>
+  <textarea id="message" name="message" rows="4" required></textarea>
+
+  <input type="submit" value="send">
+</form>
+<p>Connect with us on social media or social networkings:
+
+  <a href="https://www.twitter.com/construction">Twitter</a>
+  <a href="https://www.facebook.com/construction">Facebook</a>
+  <a href="https://www.instagram.com/construction">Instagram</a>
+  <a href="https://www.linkedin.com/construction">LinkedIn</a>
+</p>
+</section>
+
+<footer>
+ 
+   </body>
+</section>
+   <footer>
+  <!-- Footer content here -->
+  <marquee><i style="color: red;">&copy; 2024</i><b>WEB TECHNOLOGY CAT</b></marquee>
+  </footer>
+</body>
+
+</html>
+
